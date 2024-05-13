@@ -1,0 +1,234 @@
+:root{
+    --red:red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.main{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ff5587c5-1052-47cf-974b-a97e3b4f0656/065df910-dec3-46ae-afa8-7ad2b52dce40/IN-en-20240506-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: max(800px,100vw);
+    height: 100vh;
+    width: 100%;
+    box-shadow: inset 20px 1px 100px 26px black;
+}
+.box{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+nav{
+    height: 6rem;
+    max-width: 71vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.netflix{
+    height: 2.5rem;
+    position: relative;
+    z-index: 5;
+}
+#lang{
+    padding: 4px 14px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn-red{
+    padding: 7px 15px;
+    background-color: var(--red);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.mid-content{
+    text-align: center;
+    color: white;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.mid-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+.mid-content p{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.546);
+}
+.email-content{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail{
+    padding: 15px;
+    width: 18rem;
+    background-color: rgba(0, 0, 0, 0.358);
+    color: white;
+    border-radius: 3pxs;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.361);
+    font-weight: 400;
+}
+.mail-btn{
+    padding: 13px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+}
+.line{
+    height: 0.5rem;
+    background-color: gray;
+}
+.part{  
+    min-height: 90vh;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;   
+}
+.part-text h1{
+    padding-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.part-text p{
+    font-size: 1.5rem;
+}
+.part-video{
+    position: relative;
+}
+.part-video img{
+    height: 21.8rem;
+    min-width: 30vw;
+    position: relative;
+    z-index: 5;
+}
+.pvideo{
+    position: absolute;
+    top: 66px;
+    right: 50px;
+}
+.pvideo2{
+    position: absolute;
+    top: 27px;
+    right: 82px;
+}
+.faq{
+    max-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 1rem 0;
+}
+.faq h1{
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.faq p{
+    padding-top: 10px;
+}
+.que{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(30, 30, 30);
+    width: 60vw;
+    padding: 1.2rem;
+}
+
+footer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 42vh;
+    gap: 2rem;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: rgba(255, 255, 255, 0.749);
+    font-weight: 200;
+    line-height: 2.5;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:858px){
+    .mid-content h1{
+        font-size: 1.8rem;
+    }
+    .mid-content p{
+        font-size: 1.1rem;
+    }
+    .faq h1{
+        font-size: 1.5rem;
+    }
+    .que{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:976px){
+    .part{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+    .part-text h1{
+        font-size: 2rem;
+    }
+    .part-text p{
+        font-size: 1rem;   
+    }
+}
+@media only screen and (max-width:412px){
+    .main{
+        height: 60vh;
+        width: 100%;
+    }
+    nav{
+        max-width: 95vw;
+        margin: auto;
+    }
+    .mid-content{
+        height: 29vh;
+    }
+    .mid-content h1{
+        font-size: 1rem;
+    }
+    .mid-content p{
+        font-size: 0.8rem;
+    }
+    .mail,.mail-btn,#lang,.btn-red{
+        padding: 5px;
+        font-size: 0.2rem;
+    }
+    .btn-red,#lang,.mail{
+        padding: 3px 8px;
+        font-size: 0.6rem;
+    }
+   
+}
